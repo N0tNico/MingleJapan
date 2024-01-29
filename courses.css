@@ -6,7 +6,7 @@
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #4c4c4c;
 }
 
 header{
@@ -47,4 +47,42 @@ header{
     padding-top: 4px;
     padding-left: 3px;
     padding-right: 20px;
+}
+
+
+
+.courses{
+    margin: 70px auto auto 30px;
+}
+
+button{
+    display: flex;
+    flex-direction: column;
+    margin: 17px 40px 17px 40px;
+    width: 90%;
+    height: 70px;
+    color: #4c4c4c;
+    background-color: #fff;
+    border: transparent;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.25);
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #2668db;
+    color: #fff;
+}
+
+a:hover{
+    color: #fff;
+}
+
+a.course-link{
+    display: flex;
+    width: 90%;
+    height: 100px;
+    padding: 22px;
 }
