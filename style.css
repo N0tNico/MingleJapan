@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-top: 6px;
+    z-index: 9999;
+}
+
+.logo-container img{
+    max-width: 43px;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.homebutton-container img{
+    max-width: 30px;
+    display: flex;
+}
+
+.homebutton-container{
+    display: flex;
+    margin: 0 0 0 auto;
+    text-align: right;
+    width: 40px;
+    padding-top: 4px;
+    padding-left: 3px;
+    padding-right: 20px;
+}
+
+body{
+    color:#fff;
+    background-color: #e9ff99;
+    background-image:
+        radial-gradient(at 9% 89%, rgb(248, 227, 107, 1) 0px, transparent 50%),
+        radial-gradient(at 72% 6%, rgb(252, 127, 107) 0px, transparent 50%),
+        radial-gradient(at 65% 6%, rgb(255, 247, 100, 1) 0px, transparent 50%),
+        radial-gradient(at 25% 19%, rgb(107, 249, 216) 0px, transparent 50%),
+        radial-gradient(at 65% 6%, rgb(148, 188, 46, 1) 0px, transparent 50%),
+        radial-gradient(at 65% 6%, rgb(248, 230, 124, 1) 0px, transparent 50%);
+    min-height: 300vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.glass-container{
+    display:block;
+    max-width: 72vw;
+    margin-top: 16vh;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.56);
+    padding: 50px;
+    border-radius: 18px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+    max-height: none;
+}
+
+.logo{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;    
+}
+
+ul.nav-links{
+    margin: 0px;
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+li.nav-link{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.main{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main h2{
+    font-size: 35px;
+}
+
+.main p{
+    font-size: 16px;
+    line-height: 23px;
+}
+
+button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    border-color: #2668db;
+    background-color: #2668db;
+}
+
+
+
+.image-wrapper img{
+    max-width: 500px;
+}
+
+
+.animationBox{
+    font-weight: 600;
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 0;
+    padding-left: 0px;
+}
+
+ul.animation-items{
+    list-style: none;
+    display:flex;
+    float: right;
+    margin: 0 auto 0 0;
+    text-align: left;
+    padding-left: 0px;
+}
+
+
+.animation-item1{
+    padding-right: 15px;
+    position: relative;
+    opacity: 0; 
+    transform: translateY(100%); 
+    animation: fadeInFromBottom 1s forwards;
+    animation-delay: 0s;
+    font-size: 30px;
+}
+
+.animation-item2{
+    padding-right: 15px;
+    padding-bottom: 6px;
+    position: relative;
+    opacity: 0; 
+    transform: translateY(100%); 
+    animation: fadeInFromBottom 1s forwards;
+    animation-delay: 3s; 
+    font-size: 30px;
+}
+
+.animation-item3{
+    padding-right: 15px;
+    position: relative;
+    opacity: 0; 
+    transform: translateY(100%); 
+    animation: fadeInFromBottom 1s forwards;
+    animation-delay: 6s; 
+}
+
+@keyframes fadeInFromBottom {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .content{
+        flex-direction: column;
+    }
+
+}
